@@ -1,0 +1,34 @@
+.marquee {
+    width: 100%; /* Adjust width as needed */
+    white-space: nowrap; /* Prevent content from wrapping */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Required for absolute positioning of children */
+  }
+  
+  .marquee > div {
+    display: inline-block; /* Display divs in a row */
+    background-color: red;
+    padding: 0 20px; /* Add padding to each div */
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes marquee {
+    0% { transform: translateX(100%); } /* Start offscreen to the right */
+    100% { transform: translateX(-200%); } /* Move offscreen to the left */
+  }
+  
+  /* Apply animation to all divs within .marquee */
+  .marquee > div {
+    animation: marquee 20s linear infinite; /* Adjust duration as needed */
+    animation-delay: calc(var(--i) * 2s); /* Delay each div's animation */
+}
+
+/* Generate custom properties for animation delay */
+.marquee > div:nth-child(1) { --i: 0; }
+.marquee > div:nth-child(2) { --i: 1; }
+.marquee > div:nth-child(3) { --i: 2; }
+.marquee > div:nth-child(4) { --i: 3; }
+.marquee > div:nth-child(5) { --i: 4; }
+.marquee > div:nth-child(6) { --i: 5; }
+.marquee > div:nth-child(7) { --i: 6; }
+.marquee > div:nth-child(8) { --i: 7; }

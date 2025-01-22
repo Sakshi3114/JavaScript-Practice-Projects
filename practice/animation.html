@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animations</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+        /* .container{
+            background-color: rgb(85, 140, 140);
+            height: 50vh;
+            width:50vh ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 90px;
+            left: 90px;
+
+        } */
+        .biggerbox{
+            width: 350px;
+            height:350px ;
+            background-color: rgb(190, 131, 231);
+            animation: rotate 0.9s linear infinite;
+            position: absolute;
+            top: auto;
+            box-shadow: 0px 0px 10px 10px rgba(38, 35, 40, 0.811);  
+        }
+        .bigbox{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(209, 161, 228);
+            position: absolute;
+            top: auto;
+            animation: rotatereverse 0.9s linear infinite;
+            box-shadow: 0px 0px 10px 2px rgba(68, 70, 70, 0.811);
+        }
+        .box{
+            width: 250px;
+            height:250px ;
+            background-color: rgb(190, 131, 231);
+            position: absolute;
+            top: auto;
+            /* animation: move 1s ease-in  infinite ; */
+            animation: rotate 0.9s linear  infinite;
+            box-shadow: 0px 0px 12px 2px rgba(68, 70, 70, 0.811);
+        }
+        .smallbox{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(209, 161, 228);
+            position: absolute;
+            top: auto;
+            animation: rotatereverse 0.9s linear  infinite;
+            box-shadow: 0px 0px 10px 2px rgba(68, 70, 70, 0.811);
+        }
+        .box3{
+            width: 150px;
+            height:150px ;
+            background-color: rgb(190, 131, 231);;
+            position: absolute;
+            top: auto;
+            animation: rotate 0.9s linear infinite;
+            box-shadow: 0px 0px 10px 2px rgba(68, 70, 70, 0.811);
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(209, 161, 228);
+            position: absolute;
+            top: auto;
+            animation: rotatereverse 0.9s linear infinite;
+            box-shadow: 0px 0px 10px 2px rgba(68, 70, 70, 0.811);
+        }
+        .box5{
+            width: 80px;
+            height:80px ;
+            background-color: rgb(190, 131, 231);;
+            position: absolute;
+            top: auto;
+            animation: rotate 0.9s linear infinite;
+            box-shadow: 0px 0px 10px 2px rgba(68, 70, 70, 0.811);
+        }
+        .hearts{
+            color: rgb(209, 161, 228);
+            position: absolute;
+            top: auto;
+            font-size: 30px;
+        }
+        
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes rotatereverse {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+        }
+        
+        /* @keyframes move{
+            from{
+                transform: translateX(60px);
+            }
+            to{
+                transform: translatex(100px);
+            }
+        } */
+        
+        /* @keyframes moving {
+            0%{
+                transform: translate(0px,0px);
+            }
+            25%{
+                transform: translate(60px,0px);
+            }
+            50%{
+                transform: translate(60px,90px);
+            }
+            75%{
+                transform: translate(-3.4px,90px);
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+        } */
+
+    </style>
+</head>
+<body>
+    
+        <div class="biggerbox"></div>
+        <div class="bigbox"></div>
+        <div class="box"></div>
+        <div class="smallbox"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="hearts">&hearts;</div>
+</body>
+</html>

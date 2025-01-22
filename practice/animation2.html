@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    @keyframes slideinleft {
+        from{
+            transform: translateX(-300px);
+        }
+        to{
+            transform: translateX(300px);
+        }
+    }
+
+    @keyframes rotate{
+        from{
+            transform: rotate(0deg);
+
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotateend {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+    @keyframes bounce {
+        0%,20%,50%,80%,100%{
+            transform: translateY(0);
+        }
+        40%{
+            transform: translateY(-30px);
+        }
+        60%{
+            transform: translateY(-15px);
+        }
+        
+    }
+
+
+    /* h1{
+        animation: slideinleft 3s linear 0s infinite ;
+    } */
+    h2{
+        animation: rotate 2s linear 0s infinite ;
+        transform-origin: center;
+    }
+    h3{
+        animation: rotateend 2s linear 0s infinite;
+        transform-origin: top left; 
+    }
+    h1{
+        animation: bounce 1s linear 0s infinite ;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h1>Hello,World!</h1>
+        <h2>I am Rotating!</h2>
+        <h3>I am Rotating like a clock needle!</h3>
+    </div>
+</body>
+</html>

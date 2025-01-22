@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            background-image: linear-gradient(45deg,#000,grey);
+            border-top: 16px solid red;
+            border-right: 16px solid black;
+            border-bottom: 16px solid white;
+            border-left: 16px solid black;
+            border-radius: 50%;
+            animation: rotate 1s linear infinite;
+            margin-top: 30px ;
+        }
+
+        .container:hover{
+            background: url('pika.jpg') center center/cover no-repeat;
+            animation: none;
+        }
+
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>There is a surprise inside!!</h1>
+    <div class="container">
+    </div>
+</body>
+</html>

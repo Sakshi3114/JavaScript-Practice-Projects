@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0px;
+}
+
+.wrapper{
+    border: 1px solid black;
+    width: 90%;
+    max-width: 1536px;
+    height: 100px;
+    margin-inline: auto;
+    position: relative;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+@keyframes scrollLeft {
+    to{
+        left: -200px;
+    }
+}
+.item{
+    background-color: rgb(248, 144, 161);
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    border: 2px solid black;
+
+
+    position: absolute;
+    /* right: 0px;  for placing the item inside the wrapper to the right */
+    left: 100%;
+
+    animation: scrollLeft 30s linear infinite;
+}
+
+.item1{
+    animation-delay: calc(30s / 8 * (8-1) * -1);
+}
+.item2{
+    animation-delay: calc(30s / 8 * (8-2) * -1);
+}
+.item3{
+    animation-delay: calc(30s / 8 * (8-3) * -1);
+}
+.item4{
+    animation-delay: calc(30s / 8 * (8-4) * -1);
+}
+.item5{
+    animation-delay: calc(30s / 8 * (8-5) * -1);
+}
+.item6{
+    animation-delay: calc(30s / 8 * (8-6) * -1);
+}
+.item7{
+    animation-delay: calc(30s / 8 * (8-7) * -1);
+}
+.item8{
+    animation-delay: calc(30s / 8 * (8-8) * -1);
+}
